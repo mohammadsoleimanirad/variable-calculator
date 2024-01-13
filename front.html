@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Calculator</title>
+    <style>
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Variable Calculator</h1>
+
+    <label for="inputQ">Q:</label>
+    <input type="number" id="inputQ">
+
+    <label for="inputV">V:</label>
+    <input type="number" id="inputV">
+
+    <label for="inputC">C:</label>
+    <input type="number" id="inputC">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            var Q = parseFloat(document.getElementById('inputQ').value);
+            var V = parseFloat(document.getElementById('inputV').value);
+            var C = parseFloat(document.getElementById('inputC').value);
+
+            try {
+                var result = calculate_variable({ Q: Q, V: V, C: C });
+                document.getElementById('result').innerHTML = "Amount of " + Object.keys(result)[0] + " is " + result[Object.keys(result)[0]];
+            } catch (error) {
+                document.getElementById('result').innerHTML = error.message;
+            }
+        }
+    </script>
+
+</body>
+</html>
