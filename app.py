@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from your_module_name import calculate_variable
+from calc import calculate_variable
 
 app = Flask(__name__)
 
