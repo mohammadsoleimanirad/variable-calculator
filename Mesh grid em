@@ -1,6 +1,6 @@
 
 
-```python
+
 import math
 
 def mesh_grid(central_position, size, step_size=1):
@@ -112,6 +112,6 @@ for row in electric_field_matrix:
 print("\nPotential Matrix (V):")
 for row in potential_matrix:
     print(row)
-```
+
 
 #meshcode 
