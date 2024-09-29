@@ -1,0 +1,11 @@
+
+
+$$
+\dim(\mathbb{G}) = \aleph_0 \quad \text{and} \quad |\mathbb{G}| = \aleph_0
+$$
+
+$$
+\forall x \in \mathbb{G}, \forall y \in \mathbb{G}, x \neq y \implies d(x, y) = 1
+$$
+
+
